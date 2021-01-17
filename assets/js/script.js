@@ -47,3 +47,14 @@ $(document).on("click", ".historyEntry", function() {
     var thisElement = $(this);
     getWeather(thisElement.text());
 })
+
+function renderSearchHistory(cityName) {
+    searchHistoryEl.empty();
+    var searchHistoryArr = JSON.parse(localStorage.getItem("searchHistory"));
+    for (var i = 0; i < searchHistoryArr.length; i++) {
+        // putting newListItem in loop yo make a new element for each array index
+        var newListItem = $("<li>").attr("class", "historyEntry");
+        newListItem.text(searchHistoryArr[i]);
+        searchHistoryEl.prepend(newListItem);
+    }
+}
