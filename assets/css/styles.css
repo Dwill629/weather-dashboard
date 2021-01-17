@@ -73,3 +73,12 @@ input {
     height: 40%;
 }
 
+.five-day-container h1 {
+    margin-top: 25px;
+    margin-left: 5%;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+}
