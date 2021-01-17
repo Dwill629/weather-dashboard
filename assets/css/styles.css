@@ -111,3 +111,12 @@ input {
     margin-top: 20px;
 }
 
+img {
+    width: auto;
+    height: auto;
+}
+
+input {
+    height: 40px;
+    width: auto;
+}
