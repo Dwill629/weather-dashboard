@@ -82,3 +82,18 @@ input {
     display: flex;
     flex-direction: row;
 }
+
+.five-day-card {
+    margin-left: 58.5px;
+    width: 175px;
+    height: auto;
+    border-radius: 5px;
+    color: white;
+    font-size: larger;
+    background-color: #3498db;
+}
+
+.five-day-container .card-text {
+    margin-bottom: 15px;
+    padding: 10px 30px 5px 10px;
+}
