@@ -7,3 +7,10 @@ var cityNameEl = $(".cityName");
 var currentDateEl = $(".currentDate");
 var weatherIconEl = $(".weatherIcon");
 var searchHistoryEl = $(".historyItems");
+
+// Grabbing the weather details in right column locations
+var tempEl = $(".temp");
+var humidityEl = $(".humidity");
+var windSpeedEl = $(".windSpeed");
+var uvIndexEl = $(".uvIndex");
+var cardRow = $(".card-row");
