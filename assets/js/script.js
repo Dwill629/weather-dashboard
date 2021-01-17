@@ -40,3 +40,10 @@ searchBtn.on("click", function(e) {
     console.log("clicked button")
     getWeather(searchInput.val());
 });
+
+//console log history item clicked
+$(document).on("click", ".historyEntry", function() {
+    console.log("clicked history item")
+    var thisElement = $(this);
+    getWeather(thisElement.text());
+})
