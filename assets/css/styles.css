@@ -48,7 +48,6 @@ input {
     border-radius: 5px;
 }
 
-
 .container {
     display: flex;
     flex-direction: row;
@@ -56,4 +55,21 @@ input {
     height: 100%;
 }
 
+.search {
+    padding: 25px;
+    background-color: #f5f6fa;
+}
+
+.search h1 {
+    line-height: 30px;
+}
+
+.forecast {
+    margin-top: 25px;
+    border: solid 1px #cecfd2;
+    margin-left: 5%;
+    min-width: 640px;
+    padding: 12px 15px 15px 15px;
+    height: 40%;
+}
 
