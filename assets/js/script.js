@@ -52,9 +52,19 @@ function renderSearchHistory(cityName) {
     searchHistoryEl.empty();
     var searchHistoryArr = JSON.parse(localStorage.getItem("searchHistory"));
     for (var i = 0; i < searchHistoryArr.length; i++) {
-        // putting newListItem in loop yo make a new element for each array index
+        // putting newListItem in loop to make a new element for each array index
         var newListItem = $("<li>").attr("class", "historyEntry");
         newListItem.text(searchHistoryArr[i]);
         searchHistoryEl.prepend(newListItem);
     }
+}
+
+function renderWeatherData(cityName, cityTemp, cityHumidity, cityWindSpeed, cityWeatherIcon, uvVal) {
+    cityNameEl.text(cityName)
+    currentDateEl.text(`(${today})`)
+    tempEl.text(`Temperature: ${cityTemp} °F`);
+    humidityEl.text(`Humidity: ${cityHumidity}%`);
+    windSpeedEl.text(`Wind Speed: ${cityWindSpeed} MPH`);
+    uvIndexEl.text(`UV Index: ${uvVal}`);
+    weatherIconEl.attr("src", cityWeatherIcon);
 }
