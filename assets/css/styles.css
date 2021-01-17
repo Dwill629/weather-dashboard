@@ -15,3 +15,7 @@ button{
     border-radius: 5px;
     transition-duration: .4s;
 }
+
+button:hover {
+    background-color: #feca57;
+}
