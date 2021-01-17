@@ -14,3 +14,10 @@ var humidityEl = $(".humidity");
 var windSpeedEl = $(".windSpeed");
 var uvIndexEl = $(".uvIndex");
 var cardRow = $(".card-row");
+
+// Creating the variables for current date
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0');
+var yyyy = today.getFullYear();
+var today = mm + '/' + dd + '/' + yyyy;
