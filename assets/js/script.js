@@ -149,3 +149,20 @@ function getWeather(desiredCity) {
         })
     }   
 }
+
+function createForecastCard(date, icon, temp, humidity) {
+
+    // HTML element variables created to append where needed
+    var fiveDayCardEl = $("<div>").attr("class", "five-day-card");
+    var cardDate = $("<h3>").attr("class", "card-text");
+    var cardIcon = $("<img>").attr("class", "weatherIcon");
+    var cardTemp = $("<p>").attr("class", "card-text");
+    var cardHumidity = $("<p>").attr("class", "card-text");
+
+    cardRow.append(fiveDayCardEl);
+    cardDate.text(date);
+    cardIcon.attr("src", icon);
+    cardTemp.text(`Temp: ${temp} °F`);
+    cardHumidity.text(`Humidity: ${humidity}%`);
+    fiveDayCardEl.append(cardDate, cardIcon, cardTemp, cardHumidity);
+}
