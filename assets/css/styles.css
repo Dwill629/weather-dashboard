@@ -97,3 +97,17 @@ input {
     margin-bottom: 15px;
     padding: 10px 30px 5px 10px;
 }
+
+.five-day-card h3 {
+    margin: 5px;
+}
+
+.five-day-card img {
+    margin-left: 10%;
+}
+
+.historyItems, 
+.historyItems:nth-child() {
+    margin-top: 20px;
+}
+
