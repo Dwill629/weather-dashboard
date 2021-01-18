@@ -3,6 +3,7 @@
 }
 
 body {
+    background-color: #d6b0b1;
     height: 100%;
     margin: 0;
 }
@@ -58,6 +59,7 @@ input {
     flex-direction: row;
     max-width: 640px;
     height: 100%;
+    margin-left: 25px;
 }
 
 .search {
@@ -76,6 +78,7 @@ input {
     min-width: 640px;
     padding: 12px 15px 15px 15px;
     height: 40%;
+    background-color: #f5f6fa;
 }
 
 .five-day-container h1 {
@@ -129,7 +132,7 @@ input {
 i:first-child {
     height: 100%;
     font-size: larger;
-    background-color: 007965;
+    background-color: #007965;
     border-radius: 6px 6px 0px 0px;
     padding: 12px 5px 12px 15px;
     list-style: none;
